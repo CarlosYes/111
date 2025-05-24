@@ -1,0 +1,140 @@
+html {
+  height: 100vh;
+}
+
+.dorothystanding {
+	position: fixed;
+	bottom: 0;
+	left: 2%;
+	bottom: 120px;
+	z-index: 300;
+}
+
+.animated {
+	visibility: visible !important;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+}
+main{
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 54%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+  box-shadow: 20px 5px 30px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes day-view {
+  0%, 30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70%, 100% {
+    opacity: 0;
+  }
+}
+@keyframes night-view {
+  0%, 30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  70%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes sun-move {
+  0%, 30% {
+    bottom: 2vw;
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    bottom: -40vw;
+  }
+  70%, 100% {
+    opacity: 0;
+    bottom: -40vw;
+  }
+}
+@keyframes moon-move {
+  0%, 30% {
+    opacity: 0;
+    bottom: -40vw;
+  }
+  50% {
+    opacity: 0;
+    bottom: -40vw;
+  }
+  70%, 100% {
+    bottom: 2vw;
+    opacity: 1;
+  }
+}
+@keyframes surface-move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+
+
+ @keyframes whiz {
+ 0% {
+ left: 250%;
+}
+ 100% {
+ left: -250%;
+}
+}
+@-webkit-keyframes whiz {
+ 0% {
+ left: 250%;
+}
+ 100% {
+ left: -250%;
+}
+}
+.x {
+	-webkit-animation: x 20s linear infinite alternate;
+	animation: x 20s linear infinite alternate;
+}
+.y {
+	-webkit-animation: y 10s linear infinite alternate;
+	animation: y 10s linear infinite alternate;
+}
+ @-webkit-keyframes x {
+ 100% {
+ -webkit-transform: translateX(calc(100vw - 3000px));
+ transform: translateX(calc(100vw - 3000px));
+}
+}
+ @keyframes x {
+ 100% {
+ -webkit-transform: translateX(calc(1000vw - 3000px));
+ transform: translateX(calc(1000vw - 3000px));
+}
+}
+@-webkit-keyframes y {
+ 100% {
+ -webkit-transform: translateY(calc(1000vh - 3000px));
+ transform: translateY(calc(100vh - 3000px));
+}
+}
+@keyframes y {
+ 100% {
+ -webkit-transform: translateY(calc(1000vh - 3000px));
+ transform: translateY(calc(1000vh - 3000px));
+}
+}
